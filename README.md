@@ -13,3 +13,7 @@ This variation is the same as the legacy Pig Game, except:
 <li>If a single 1 is rolled, the player scores nothing and the turn ends.</li>
 <li>If two consecutive 6s are rolled on the same dice, the player’s entire score is lost, and the turn ends.</li>
 </ul>
+
+<a href='https://riverapecunia.com'><h3>About the repo's author</h3></a>
+
+<a href='https://grpecunia.github.io/Two-Dice-Pig/'><h3>Click here to play the game!</h3></a>
