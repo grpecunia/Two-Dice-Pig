@@ -9,7 +9,7 @@ GAME RULES:
 
 */
 // Initial Variables
-var scores, roundScore, lastRollDice1, lastRollDice2, activePlayer, gamePlaying, maxScore, setMaxScore;
+var scores, roundScore, lastRollDice1, lastRollDice2, activePlayer, gamePlaying, maxScore, setMaxScore, roller;
 
 // Initiation Function
 init();
@@ -47,7 +47,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
          diceDOM2.style.display = 'block';
          diceDOM.src = 'dice-' + dice + '.png';
          diceDOM2.src = 'dice-' + diceTwo + '.png';
-         if ((lastRollDice1 == 6 && dice == 6) || (lastRollDice2 == 6 && diceTwo == 6)) {
+         if ((lastRollDice1 == 6 && dice == 6) || (lastRollDice2 == 6 && diceTwo == 6) && roller == activePlayer)  {
              scores[activePlayer] = 0;
              document.getElementById('score-' + activePlayer).textContent = 0;
              nextPlayer()
@@ -58,7 +58,11 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
              nextPlayer()
          }
     }   lastRollDice1 = dice;
-        lastRollDice2 = diceTwo;          
+        lastRollDice2 = diceTwo;
+        roller = activePlayer   
+        // console.log(lastRollDice1)
+        // console.log(lastRollDice2)
+        // console.log('Current Player is ' + roller)     
 });
 
 // HOLD Score button Function
