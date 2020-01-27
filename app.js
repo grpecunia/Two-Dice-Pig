@@ -59,10 +59,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
          }
     }   lastRollDice1 = dice;
         lastRollDice2 = diceTwo;
-        roller = activePlayer   
-        // console.log(lastRollDice1)
-        // console.log(lastRollDice2)
-        // console.log('Current Player is ' + roller)     
+        roller = activePlayer;       
 });
 
 // HOLD Score button Function
